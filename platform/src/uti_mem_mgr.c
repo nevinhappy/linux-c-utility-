@@ -9,7 +9,7 @@
 #include "uti_logging.h"
 #include "uti_errno.h"
 
-uti_uint_t  uti_pagesize;
+uti_uint_t  uti_pagesize = 0;
 
 static void *uti_palloc_block(uti_pool_t *pool, size_t size);
 static void *uti_palloc_large(uti_pool_t *pool, size_t size);
@@ -20,8 +20,11 @@ static void *uti_palloc_large(uti_pool_t *pool, size_t size);
  **/
 void mem_init()
 {
-    uti_pagesize = getpagesize();
+    if(!uti_pagesize) {
+        uti_pagesize = getpagesize();
+    }
 }
+
 
 
 void *
