@@ -41,9 +41,6 @@ extern "C" {
 
 /*************************************************************************/
 
-typedef intptr_t        uti_int_t;
-typedef uintptr_t       uti_uint_t;
-
 typedef struct uti_pool_s        uti_pool_t;
 
 

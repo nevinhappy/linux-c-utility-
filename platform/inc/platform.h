@@ -45,6 +45,10 @@ typedef long long			I64;
 #include <stdint.h>
 #include <stdbool.h>
 
+typedef intptr_t        uti_int_t;
+typedef uintptr_t       uti_uint_t;
+typedef intptr_t        uti_flag_t;
+
 #endif //!define(__NO_SUPORT_C99)
 
 #endif //!defined(NO_BASIC_TYPES)

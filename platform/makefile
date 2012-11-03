@@ -28,32 +28,32 @@ CXXFLAGS = $(CCFLAGS) -D__cplusplus
 #set objects
 OBJECTS =  platform.o       \
        uti_file.o           \
-	   uti_logging.o        \
-	   uti_time.o		 	\
-	   uti_thread.o			\
-	   uti_common.o         \
-	   uti_cstring.o		\
-	   uti_rbtree.o         \
-	   uti_timer.o          \
-	   uti_errno.o          \
-	   uti_mem_mgr.o        \
-	   test_main.o
+       uti_logging.o        \
+       uti_time.o           \
+       uti_thread.o         \
+       uti_common.o         \
+       uti_string.o	        \
+       uti_rbtree.o         \
+       uti_timer.o          \
+       uti_errno.o          \
+       uti_mem_mgr.o        \
+       test_main.o
 
 #library settings
 LIBOBJECTS = platform.o     \
        uti_file.o           \
-	   uti_logging.o        \
-	   uti_time.o		 	\
-	   uti_thread.o			\
-	   uti_common.o         \
-	   uti_cstring.o		\
-	   uti_rbtree.o         \
-	   uti_errno.o          \
-	   uti_mem_mgr.o        \
-	   uti_timer.o          	  
+       uti_logging.o        \
+       uti_time.o           \
+       uti_thread.o         \
+       uti_common.o         \
+       uti_string.o	        \
+       uti_rbtree.o         \
+       uti_errno.o          \
+       uti_mem_mgr.o        \
+       uti_timer.o 
 
 #dependency lib targets
-DEPENDENCY_TARGETS	= 	
+DEPENDENCY_TARGETS = 
 #static
 ARTARGET = libplatform.a
 #shared
